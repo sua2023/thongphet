@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:tailwindcss/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["tailwindcss"],
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "react/jsx-key": "error"
+  }
+}

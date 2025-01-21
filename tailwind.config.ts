@@ -1,0 +1,86 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      boxShadow: {
+        custom:
+          "5px 8px 20px 5px rgba(0, 0, 0, 0.1), 0 4px 6px 2px rgba(0, 0, 0, 0.15)",
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors: {
+        black: "#333333",
+        blackGray: "#323232",
+        white: "#FFFFFF",
+        primary: "#009b91",
+        transparent: "transparent",
+        grayDark: "#cbd5e1",
+        gray: "#e5e7eb",
+        gray100: "rgb(243 244 246)",
+        gray300: "rgb(209 213 219)",
+        gray400: "rgb(156 163 175)",
+        gray500: "rgb(107 114 128)",
+        gray700: "rgb(55 65 81)",
+        gray800: "rgb(31 41 55)",
+        gray900: "rgb(17 24 39)",
+        red: "#ef4444",
+        red300: "rgb(252 165 165)",
+        red400: "rgb(248 113 113)",
+        red950: "rgb(69 10 10)",
+
+        green: "#4ade80",
+        body: "#f8fafc",
+        stone200: "#e7e5e4",
+        stone300: "rgb(214 211 209)",
+        stone400: "rgb(168 162 158)",
+        slate50: "rgb(248 250 252)",
+        slate100: "rgb(241 245 249)",
+        slate200: "rgb(226 232 240)",
+        blur100: "rgb(219 234 254)",
+        blur800: "rgb(30 64 175)",
+        pink100: "rgb(252 231 243)",
+        pink800: "rgb(157 23 77)",
+        yellow100: "rgb(254 249 195)",
+        yellow50: "rgb(254 252 232)",
+        yellow500: "rgb(234 179 8)",
+        emerald100: "(110 231 183)",
+      },
+      fontSize: {
+        "title-xxl": ["44px", "55px"],
+        "title-xxl2": ["42px", "58px"],
+        "title-xl": ["36px", "45px"],
+        "title-xl2": ["33px", "45px"],
+        "title-lg": ["28px", "35px"],
+        "title-md": ["24px", "30px"],
+        "title-md2": ["26px", "30px"],
+        "title-sm": ["20px", "26px"],
+        "title-sm2": ["22px", "28px"],
+        "title-xsm": ["18px", "24px"],
+        sm: ["14px", "20px"],
+        base: ["16px", "24px"],
+        lg: ["20px", "28px"],
+        xl: ["24px", "32px"],
+      },
+      borderRadius: {
+        none: "0",
+        sm: "0.125rem",
+        default: "0.25rem",
+        md: "0.375rem",
+        lg: "0.5rem",
+        full: "9999px",
+        large: "12px",
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
